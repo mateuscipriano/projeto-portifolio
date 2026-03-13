@@ -107,12 +107,6 @@ div#social{
   margin-top: 15px;
 }
 
-@media screen and (min-width: 768px) {
-div#social {
-  flex-flow: row nowrap;
-}
-}
-
 div#social a {
   color: var(--destaque);
   text-decoration: none;
@@ -266,6 +260,21 @@ footer {
 
 
 @media screen and (min-width:768px){
+  main {
+    grid-template-columns: auto 300px 1fr auto ;
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position:sticky;
+    top: 55px;
+  }
+
+  section#detalhes{
+    grid-column: 3 / 4;
+  }
+
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
